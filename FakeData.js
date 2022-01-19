@@ -3,35 +3,35 @@ const UserList = [{
         name: 'John Doe',
         username: 'john',
         age: 30,
-        nationality: 'India'
+        nationality: 'INDIA'
     },
     {
         id: 2,
         name: 'John jatt',
         username: 'johncena',
         age: 302,
-        nationality: 'tapa desh'
+        nationality: 'DESH'
     },
     {
         id: 3,
         name: 'John singh',
         username: 'johnaa',
         age: 3220,
-        nationality: 'punjab'
+        nationality: 'PUNJAB'
     },
     {
         id: 4,
         name: 'John gabru',
         username: 'john_gabru',
         age: 130,
-        nationality: 'tapa'
+        nationality: 'TAPA'
     },
     {
         id: 5,
         name: 'John di bhen di',
         username: 'johni_dsnds',
         age: 20,
-        nationality: 'gurgaon'
+        nationality: 'GURGAON'
     }
 ]
 
