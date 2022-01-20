@@ -1,4 +1,4 @@
-const { UserList } = require('../FakeData');
+const { UserList, MovieList } = require('../FakeData');
 const _ = require('lodash');
 
 
@@ -16,9 +16,13 @@ const resolvers = {
 
         //Movie Resolvers
         movies: () => {
-
+            return MovieList;
         },
-        movie: (parent, args) => {}
+        movie: (parent, args) => {
+            const name = args.name;
+            const movie = _.find(MovieList, { name });
+            return movie;
+        }
     }
 }
 
