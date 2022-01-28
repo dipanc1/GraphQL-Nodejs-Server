@@ -19,7 +19,7 @@ const typeDefs = gql `
     }
 
     type Query {
-        users: [User!]!
+        users: UsersResults
         user(id: ID!): User!
         movies: [Movie!]!
         movie(name: String!): Movie!
@@ -50,6 +50,17 @@ const typeDefs = gql `
         TAPA
         GURGAON
     }
-`
+
+    type UsersSuccessfulResult {
+        users: [User!]!
+    }
+
+    type UsersErrorResult{
+        message: String!
+    }
+
+    union UsersResults = UsersSuccessfulResult | UsersErrorResult
+
+`;
 
 module.exports = { typeDefs };
